@@ -33,3 +33,8 @@ KVDB is a React application that provides detailed information on movies, TV sho
 - `src/pages`: Contains main page components.
 - `src/App.js`: The main app component.
 - `src/index.js`: The entry point of the application.
+
+## Deployment
+
+The project is deployed on [Vercel](https://kvdb-movie-tv-web-app.vercel.app/).
+
