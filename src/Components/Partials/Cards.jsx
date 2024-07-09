@@ -13,9 +13,8 @@ function Cards({ data, title }) {
         >
           <img
             className="shadow-[8px_17px_38px_8px_rgba(0,0,0,0.9) h-[40vh] object-cover"
-            src={`https://image.tmdb.org/t/p/original/${
-              c.backdrop_path || c.poster_path || c.profile_path
-            }`}
+            src={`https://image.tmdb.org/t/p/original/${c.backdrop_path || c.poster_path || c.profile_path
+              }`}
           />
           <h1 className="text-xl text-zinc-300 font-semibold mt-2">
             {" "}

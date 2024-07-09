@@ -12,6 +12,7 @@ function Home() {
   const [wallpaper, setwallpaper] = useState("");
   const [trending, settrending] = useState("");
   const [category, setcategory] = useState("all");
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 640);
 
   const GetHeaderWallpaper = async () => {
     const res = await fetch(
@@ -31,6 +32,7 @@ function Home() {
     const data = await res.json();
     settrending(data.results);
   };
+  
 
   useEffect(() => {
     GetTrending();
@@ -38,7 +40,7 @@ function Home() {
   }, [category]);
   return wallpaper && trending ? (
     <>
-      <SideNav />
+      <SideNav className="hidden sm:block"/>
       <div className="w-[80%] h-full overflow-y-auto overflow-x-hidden">
         <TopNav />
         <Header data={wallpaper} />
