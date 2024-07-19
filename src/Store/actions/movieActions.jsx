@@ -1,7 +1,7 @@
 import { loadmovie } from "../reducers/movieSlice";
 export { removemovie } from "../reducers/movieSlice";
-import { ApiKey } from "../../Constants";
 import axios from "axios";
+const ApiKey = import.meta.env.VITE_TMDB_API_KEY;
 
 export const asyncloadmovie = (id) => async (dispatch, getState) => {
   try {

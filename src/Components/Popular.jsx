@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { useNavigate } from "react-router-dom";
-import { ApiKey } from "../Constants";
 import Cards from "./Partials/Cards";
 import Dropdown from "./Partials/Dropdown";
 import Loader from "./Partials/Loader";
@@ -12,6 +11,7 @@ function Popular() {
   const [popular, setpopular] = useState("");
   const [page, setpage] = useState(1);
   const [hasMore, sethasMore] = useState(true);
+  const ApiKey = import.meta.env.VITE_TMDB_API_KEY;
   const navigate = useNavigate();
   // Capitalize the first letter of the category for the document title
   const capitalizeFirstLetter = (string) =>

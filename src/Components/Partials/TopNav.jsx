@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ApiKey } from "../../Constants";
 import no_image from "/no_image.jpg";
 
 function TopNav() {
   const [query, setQuery] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  const ApiKey = import.meta.env.VITE_TMDB_API_KEY;
 
   const getSearches = async (searchQuery) => {
     if (!searchQuery) {

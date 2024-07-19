@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ApiKey } from "../Constants";
+
+
+
 
 function ContactUs() {
   const [wallpaper, setWallpaper] = useState("");
-  const navigate= useNavigate();
+  const navigate = useNavigate();
+  const ApiKey = import.meta.env.VITE_TMDB_API_KEY;
+  console.log(ApiKey);
   document.title = "KVDB | Contact Us";
+
 
   const getHeaderWallpaper = async () => {
     try {
@@ -28,15 +33,14 @@ function ContactUs() {
   return (
     <div
       style={{
-        backgroundImage: `linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9)), url(https://image.tmdb.org/t/p/original/${
-          wallpaper.backdrop_path || wallpaper.profile_path
-        })`,
+        backgroundImage: `linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9)), url(https://image.tmdb.org/t/p/original/${wallpaper.backdrop_path || wallpaper.profile_path
+          })`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
       className="absolute flex w-screen flex-col items-center justify-center min-h-screen bg-[#1F1E24] text-white p-5"
     >
-        <div className="absolute top-[5%] px-[5%] w-full flex justify-between items-center">
+      <div className="absolute top-[5%] px-[5%] w-full flex justify-between items-center">
         <h1 className="text-2xl  font-semibold text-white">
           <i
             onClick={() => navigate(-1)}
@@ -44,7 +48,7 @@ function ContactUs() {
           ></i>
           Contact Us
         </h1>
-        </div>
+      </div>
       <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
       <p className="text-lg max-w-2xl text-center mb-4">
         We would love to hear from you! Whether you have a question about

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ApiKey } from "../Constants";
 
 function AboutUs() {
   const [wallpaper, setWallpaper] = useState("");
   const navigate = useNavigate();
+  const ApiKey = import.meta.env.VITE_TMDB_API_KEY;
   document.title = "KVDB | About Us";
 
   const getHeaderWallpaper = async () => {

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { ApiKey } from "../Constants";
 import SideNav from "./Partials/SideNav";
 import TopNav from "./Partials/TopNav";
 import Header from "./Partials/Header";
@@ -13,6 +12,7 @@ function Home() {
   const [trending, settrending] = useState("");
   const [category, setcategory] = useState("all");
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 640);
+  const ApiKey = import.meta.env.VITE_TMDB_API_KEY;
 
   const GetHeaderWallpaper = async () => {
     const res = await fetch(

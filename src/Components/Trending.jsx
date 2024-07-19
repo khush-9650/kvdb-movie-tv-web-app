@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { ApiKey } from "../Constants";
 import Cards from "./Partials/Cards";
 import Dropdown from "./Partials/Dropdown";
 import Loader from "./Partials/Loader";
@@ -14,6 +13,7 @@ function Trending() {
   const [duration, setduration] = useState("day");
   const [trending, settrending] = useState("");
   const [page, setpage] = useState(1);
+  const ApiKey = import.meta.env.VITE_TMDB_API_KEY;
   const [hasMore, sethasMore] = useState(true);
   const navigate = useNavigate();
 
