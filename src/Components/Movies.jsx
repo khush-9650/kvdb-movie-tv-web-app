@@ -58,15 +58,15 @@ function Movies() {
         </h1>
         <div className="flex w-[80%] items-center">
           <TopNav />
-          <div className="sm:inline-block hidden">
-            <Dropdown
-              title="Category"
-              options={["popular", "top_rated", "upcoming", "now_playing"]}
-              func={(e) => {
-                setcategory(e.target.value);
-              }}
-            />
-          </div>
+
+          <Dropdown
+            title="Category"
+            options={["popular", "top_rated", "upcoming", "now_playing"]}
+            func={(e) => {
+              setcategory(e.target.value);
+            }}
+          />
+
           <div className="w-[2%]"></div>
 
         </div>
