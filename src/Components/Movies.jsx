@@ -49,7 +49,7 @@ function Movies() {
   return movie.length > 0 ? (
     <div className="w-screen h-screen ">
       <div className=" px-[5%] w-full flex justify-between items-center">
-        <h1 className="text-2xl font-semibold text-zinc-600">
+        <h1 className="text-2xl font-semibold text-zinc-600 sm:flex hidden">
           <i
             onClick={() => navigate(-1)}
             className="hover:text-[#6556CD] ri-arrow-left-line mr-2 "
@@ -58,15 +58,17 @@ function Movies() {
         </h1>
         <div className="flex w-[80%] items-center">
           <TopNav />
-          <Dropdown
-            title="Category"
-            options={["popular", "top_rated", "upcoming","now_playing"]}
-            func={(e) => {
-              setcategory(e.target.value);
-            }}
-          />
+          <div className="sm:inline-block hidden">
+            <Dropdown
+              title="Category"
+              options={["popular", "top_rated", "upcoming", "now_playing"]}
+              func={(e) => {
+                setcategory(e.target.value);
+              }}
+            />
+          </div>
           <div className="w-[2%]"></div>
-          
+
         </div>
       </div>
 

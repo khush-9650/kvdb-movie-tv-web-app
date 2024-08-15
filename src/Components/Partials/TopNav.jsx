@@ -53,9 +53,8 @@ function TopNav() {
               className="w-[12vh] h-[12vh] object-cover rounded-lg mr-5 shadow-lg "
               src={
                 item.backdrop_path || item.profile_path
-                  ? `https://image.tmdb.org/t/p/original/${
-                      item.backdrop_path || item.profile_path
-                    }`
+                  ? `https://image.tmdb.org/t/p/original/${item.backdrop_path || item.profile_path
+                  }`
                   : no_image
               }
               alt=""
