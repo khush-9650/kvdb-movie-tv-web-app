@@ -44,7 +44,7 @@ function Home() {
       <div className="w-[80%] h-full overflow-y-auto overflow-x-hidden">
         <TopNav />
         <Header data={wallpaper} />
-        <div className="p-5 flex justify-between">
+        <div className="sm:p-5 flex justify-between">
           <h1 className="text-3xl font-semibold text-zinc-400">Trending</h1>
           <Dropdown
             title="Filter"
