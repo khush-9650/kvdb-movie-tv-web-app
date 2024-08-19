@@ -27,7 +27,7 @@ function MovieDetails() {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="relative w-screen h-[200vh] px-[10%] "
+      className="relative w-screen sm:h-[200vh] h-full px-[10%] "
     >
       {/* part 1 navigation */}
       <nav className=" h-[10vh] w-full text-zinc-100 flex gap-10 text-xl items-center">
