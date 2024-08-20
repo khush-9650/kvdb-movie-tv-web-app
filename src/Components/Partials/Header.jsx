@@ -2,9 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Header({ data }) {
-  const imageUrl = `https://image.tmdb.org/t/p/original/${
-    data.backdrop_path || data.profile_path
-  }`;
+  const imageUrl = `https://image.tmdb.org/t/p/original/${data.backdrop_path || data.profile_path
+    }`;
 
   return (
     <div
@@ -22,12 +21,12 @@ function Header({ data }) {
         {data.overview.slice(0, 200)}...
         <Link
           to={`/${data.media_type}/details/${data.id}`}
-          className="text-blue-400"
+          className="sm:text-blue-400"
         >
           more
         </Link>
       </p>
-      <p className="text-white">
+      <p className="sm:text-white">
         <i className=" text-yellow-500 mr-2 ri-megaphone-fill"></i>
         {data.release_date || "No Information"}{" "}
         <i className="ml-5 text-yellow-500 mr-2 ri-album-fill"></i>
