@@ -38,7 +38,7 @@ function ContactUs() {
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      className="absolute flex w-screen flex-col items-center justify-center min-h-screen bg-[#1F1E24] text-white p-5 "
+      className="absolute flex w-screen flex-col items-center justify-center min-h-screen bg-[#1F1E24] text-white p-5"
     >
       <div className="absolute top-[5%] px-[5%] w-full flex justify-between items-center">
         <h1 className="text-2xl  font-semibold text-white">
