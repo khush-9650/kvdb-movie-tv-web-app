@@ -35,8 +35,8 @@ function ContactUs() {
       style={{
         backgroundImage: `linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.7),rgba(0,0,0,.9)), url(https://image.tmdb.org/t/p/original/${wallpaper.backdrop_path || wallpaper.profile_path
           })`,
-        backgroundSize: "cover ",
-        backgroundPosition: "center ",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
       className="absolute flex w-screen flex-col items-center justify-center min-h-screen bg-[#1F1E24] text-white p-5"
     >
