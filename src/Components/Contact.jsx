@@ -66,10 +66,10 @@ function ContactUs() {
         </a>
         . We are available from Monday to Friday, 9 AM - 6 PM.
       </p>
-      <p className="text-lg max-w-2xl text-center mb-4">
+      <p className="text-lg max-w-2xl text-center mb-4 ">
         Follow us on social media for the latest updates and news:
       </p>
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 ">
         <a
           href="https://facebook.com"
           target="_blank"
