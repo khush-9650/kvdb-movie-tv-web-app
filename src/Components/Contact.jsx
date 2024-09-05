@@ -50,12 +50,12 @@ function ContactUs() {
         </h1>
       </div>
       <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-      <p className="text-lg max-w-2xl text-center mb-4 ">
+      <p className="text-lg max-w-2xl text-center mb-4">
         We would love to hear from you! Whether you have a question about
         features, trials, pricing, need a demo, or anything else, our team is
         ready to answer all your questions.
       </p>
-      <p className="text-lg max-w-2xl text-center mb-4">
+      <p className="text-lg max-w-2xl text-center mb-4 ">
         You can reach out to us via email at{" "}
         <a href="mailto:support@kvdb.com" className="text-[#6556CD]">
           support@kvdb.com
