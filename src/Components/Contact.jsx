@@ -44,13 +44,13 @@ function ContactUs() {
         <h1 className="text-2xl  font-semibold text-white">
           <i
             onClick={() => navigate(-1)}
-            className="hover:text-[#6556CD] ri-arrow-left-line mr-2 "
+            className="hover:text-[#6556CD] ri-arrow-left-line mr-2"
           ></i>
           Contact Us
         </h1>
       </div>
       <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-      <p className="text-lg max-w-2xl text-center mb-4">
+      <p className="text-lg max-w-2xl text-center mb-4 ">
         We would love to hear from you! Whether you have a question about
         features, trials, pricing, need a demo, or anything else, our team is
         ready to answer all your questions.
