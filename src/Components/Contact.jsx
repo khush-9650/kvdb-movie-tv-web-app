@@ -62,7 +62,7 @@ function ContactUs() {
         </a>{" "}
         or call us at{" "}
         <a href="tel:+123456789" className="text-[#6556CD]">
-          +123 456 789
+          +123-456 789
         </a>
         . We are available from Monday to Friday, 9 AM - 6 PM.
       </p>
