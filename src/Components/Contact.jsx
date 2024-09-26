@@ -64,7 +64,7 @@ function ContactUs() {
         <a href="tel:+123456789" className="text-[#6556CD]">
           +123-456-789
         </a>
-        . We are available from Monday to Friday, 9AM - 6 PM.
+        . We are available from Monday to Friday, 9AM - 6PM.
       </p>
       <p className="text-lg max-w-2xl text-center mb-4 ">
         Follow us on social media for the latest updates and news:
